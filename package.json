@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ChrisNirschl1/expresss-hw-NIRSCHL/issues"
   },
-  "homepage": "https://github.com/ChrisNirschl1/expresss-hw-NIRSCHL#readme"
+  "homepage": "https://github.com/ChrisNirschl1/expresss-hw-NIRSCHL#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
