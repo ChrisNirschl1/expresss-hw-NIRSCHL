@@ -21,14 +21,16 @@ app.use(express.json());
     res.json(JSON.parse(fs.readFileSync('./db/notes.json', 'utf8')))
   })
 
-  app.post('api/notes', (req,res)=>{
-
-  })
+  app.post("/api/notes", (req, res) => {
+    const { title, text } = req.body;
+    
+  });
+ 
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
   });
 
-app.listen(PORT, ()=>{
-    console.log(`listening on port ${PORT}`)
-});
+  app.listen(PORT, () =>
+  console.log(`Express server listening on port ${PORT}!`)
+);
